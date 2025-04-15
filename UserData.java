@@ -1,20 +1,20 @@
 import java.util.Scanner;
 
-/*this class and the methods inside this class contains the attributes and functions 
+/*this class and the methods inside this class contains attributes and functions 
 necessary for gathering user made information */
 
 public class UserData {
     Scanner sc = new Scanner(System.in);
 
     int userCount;
-    //constructor for class
-    public UserData(int num){
+    //method : initialize 'userCount' for array lenght
+    public void getUserCount(int num){
         userCount = num;
     }
 
     //attributes : user data
     String [] subjects = new String[userCount];
-    int [] grades = new int[userCount];
+    double [] grades = new double[userCount];
     int [] creditUnits = new int[userCount];
 
     //method getting input for 'subjects' and 'grades'
@@ -25,7 +25,7 @@ public class UserData {
             System.out.print("Credit units: ");
             creditUnits[i] = sc.nextInt();
             System.out.print("Grade " + (i+1) + ": ");
-            grades[i] = sc.nextInt();
+            grades[i] = sc.nextDouble();
         }
     }
 }

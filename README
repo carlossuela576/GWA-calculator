@@ -1,6 +1,7 @@
 A GWA calculator made specifically for project based learning
 
 #System flow
+
 The user starts by entering the amount of their *subjects*, proceedingly subjects and grades would be stored in an
 array - size of the array would be initiallized based from the first input.
 

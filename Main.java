@@ -2,13 +2,15 @@ import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args) {
+        //instantiate objects
         Scanner sc = new Scanner(System.in);
+        UserData usr1 = new UserData();
 
-        //input number
-        System.out.print("Number of your subjects: ");
+        //initializing lenght of array attributes for user data
+        System.out.print("Enter amount of subjects: ");
         int num = sc.nextInt();
-        //constructor - for initializing the size of arrays
-        UserData usr1 = new UserData(num);
+        usr1.getUserCount(num);
+        
 
     }
 }
