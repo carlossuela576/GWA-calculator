@@ -1,0 +1,11 @@
+A GWA calculator made specifically for project based learning
+
+#System flow
+The user starts by entering the amount of their *subjects*, proceedingly subjects and grades would be stored in an
+array - size of the array would be initiallized based from the first input.
+
+Next part onto another class two methods will be created. **to put it simply the methods of this class aims to convert
+the grades into a grade point**
+
+Proceeding to the next class inherited form the very first class, the method from this class tends to do all
+of the computations necessary to produce the desired output.
