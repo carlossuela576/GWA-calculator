@@ -4,12 +4,17 @@ public class Main{
     public static void main(String[] args) {
         //instantiate objects
         Scanner sc = new Scanner(System.in);
-        UserData usr1 = new UserData();
+        CalculateData usr1 = new CalculateData();
 
         //initializing lenght of array attributes for user data
         System.out.print("Enter amount of subjects: ");
         int num = sc.nextInt();
         usr1.getUserCount(num);
+
+        //implementing methods
+        usr1.getDat();
+        usr1.isGradePoint();
+        System.out.println(usr1.finalGWA());
         
 
     }

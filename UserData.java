@@ -10,12 +10,15 @@ public class UserData {
     //method : initialize 'userCount' for array lenght
     public void getUserCount(int num){
         userCount = num;
+        subjects = new String[userCount];
+        grades = new double[userCount];
+        creditUnits = new int[userCount];
     }
 
     //attributes : user data
-    String [] subjects = new String[userCount];
-    double [] grades = new double[userCount];
-    int [] creditUnits = new int[userCount];
+    String [] subjects;
+    double [] grades;
+    int [] creditUnits;
 
     //method getting input for 'subjects' and 'grades'
     public void getDat(){
@@ -26,6 +29,7 @@ public class UserData {
             creditUnits[i] = sc.nextInt();
             System.out.print("Grade " + (i+1) + ": ");
             grades[i] = sc.nextDouble();
+            sc.nextLine();
         }
     }
 }
