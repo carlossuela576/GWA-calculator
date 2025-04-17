@@ -2,7 +2,7 @@ public class CalculateData extends ConvertData {
     double totalWGP = 0;
     double totalCU = 0;
     
-    double [] WGP = new double[userCount];
+    
 
     public void calculateData(){
         for (int i = 0; i < userCount; i++) {

@@ -1,7 +1,7 @@
 /* this class contains the necesarry attributes and methods into converting the grade percentage into a grade point */
 
 public class ConvertData extends UserData{
-    double [] gradePoint = new double[userCount];
+    
 
     /*this method is to be used into an another method at the same class this takes in an input from the
      * grades array and converts it into a grade point.

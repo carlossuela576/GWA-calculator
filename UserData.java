@@ -13,12 +13,16 @@ public class UserData {
         subjects = new String[userCount];
         grades = new double[userCount];
         creditUnits = new int[userCount];
+        gradePoint = new double[userCount];
+        WGP = new double[userCount];
     }
 
     //attributes : user data
     String [] subjects;
     double [] grades;
     int [] creditUnits;
+    double [] gradePoint;
+    double [] WGP;
 
     //method getting input for 'subjects' and 'grades'
     public void getDat(){
