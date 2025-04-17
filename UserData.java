@@ -31,9 +31,12 @@ public class UserData {
             subjects[i] = sc.nextLine();
             System.out.print("Credit units: ");
             creditUnits[i] = sc.nextInt();
+            sc.nextLine();
             System.out.print("Grade " + (i+1) + ": ");
             grades[i] = sc.nextDouble();
             sc.nextLine();
         }
     }
+
+    
 }

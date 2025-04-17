@@ -10,8 +10,8 @@ public class CalculateData extends ConvertData {
         }
 
         for (int i = 0; i < userCount; i++) {
-            WGP[i] += totalWGP;
-            creditUnits[i] += totalCU;
+            totalWGP += WGP[i];
+            totalCU += creditUnits[i];
         }
     }
 

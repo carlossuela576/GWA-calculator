@@ -14,8 +14,8 @@ public class Main{
         //implementing methods
         usr1.getDat();
         usr1.isGradePoint();
+        usr1.calculateData();
         System.out.println(usr1.finalGWA());
-        
 
     }
 }
