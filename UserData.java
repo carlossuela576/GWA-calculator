@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /*this class and the methods inside this class contains attributes and functions 
@@ -26,15 +27,21 @@ public class UserData {
 
     //method getting input for 'subjects' and 'grades'
     public void getDat(){
-        for (int i = 0; i < userCount; i++) {
-            System.out.print("Subject " + (i+1) + ": ");
-            subjects[i] = sc.nextLine();
-            System.out.print("Credit units: ");
-            creditUnits[i] = sc.nextInt();
-            sc.nextLine();
-            System.out.print("Grade " + (i+1) + ": ");
-            grades[i] = sc.nextDouble();
-            sc.nextLine();
+        try {
+            for (int i = 0; i < userCount; i++) {
+                System.out.print("Subject #" + (i+1) + ": ");
+                subjects[i] = sc.nextLine();
+                System.out.print("Credit units for " + subjects[i] + ": ");
+                creditUnits[i] = sc.nextInt();
+                sc.nextLine();
+                System.out.print("Grade for " + subjects[i] + ": ");
+                grades[i] = sc.nextDouble();
+                sc.nextLine();
+            }
+        } catch (InputMismatchException e) {
+            System.out.println("Something went wrong");
+        } catch (ArrayIndexOutOfBoundsException b){
+            System.out.println("Something went wrong");
         }
     }
 
