@@ -1,7 +1,9 @@
 import java.io.FileWriter;
 import java.io.IOException;
 public class FileData extends CalculateData {
-    //attributes
+    /* this class contains all necessary methods and functions
+     * prior to program's file input and output
+     */
 
     public void isFile(String pathName){
         try {
