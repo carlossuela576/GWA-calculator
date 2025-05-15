@@ -5,7 +5,7 @@ public class Main{
     public static void main(String[] args) {
         //instantiate objects
         Scanner sc = new Scanner(System.in);
-        CalculateData usr1 = new CalculateData();
+        FileData usr1 = new FileData();
 
         try {
             //initializing lenght of array attributes for 'UserData()'
@@ -26,10 +26,36 @@ public class Main{
                     throw new ArithmeticException();
                 }
                 else{
-                    System.out.println(usr1.finalGWA());
+                    System.out.println("Your GWA: " + usr1.finalGWA());
                 }
             } catch (ArithmeticException b) {
                 System.out.println("Division by zero");
+            }
+            
+            //File IO (downloading results : cache, not a permanent data)
+            try {
+                System.out.println("Do you want to download your results?");
+                System.out.print("Y (yes) N (no): ");
+                sc.nextLine();
+                String ifFile = sc.nextLine().toUpperCase();
+    
+                switch (ifFile) {
+                    case "Y":
+                        System.out.println();
+                        System.out.print("Name your file: ");
+                        String filenameString = sc.nextLine();
+                        String filenameModified = filenameString + ".txt";
+                        usr1.isFile(filenameModified);
+                        break;
+                    case "N":
+                        System.out.println();
+                        System.out.println("Okay, have a nice day");
+                    default:
+                        throw new InputMismatchException();
+                }
+            } 
+            catch (InputMismatchException e) {
+                e.printStackTrace();
             }
             
         } catch (InputMismatchException e) {
