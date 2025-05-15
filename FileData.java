@@ -12,8 +12,9 @@ public class FileData extends CalculateData {
             String convstr = String.valueOf(finalGWA());
             userfile.write("Your GWA is: " + convstr + "\n");
             //list all subject and grade points
+            userfile.append("\n"+"Subjects");
             for(int i = 0; i<userCount; i++){
-                userfile.append("\nSubject: " + subjects[i]+ ": " + gradePoint[i]);
+                userfile.append("\n" + subjects[i]+ ": " + gradePoint[i]);
             }
             //Total credit units
             int convCUint = (int) totalCU;
